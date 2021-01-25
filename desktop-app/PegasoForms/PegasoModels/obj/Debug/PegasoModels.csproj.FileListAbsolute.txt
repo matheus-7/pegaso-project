@@ -1,0 +1,5 @@
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Debug\PegasoModels.dll
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Debug\PegasoModels.pdb
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.csproj.CoreCompileInputs.cache
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.dll
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.pdb
