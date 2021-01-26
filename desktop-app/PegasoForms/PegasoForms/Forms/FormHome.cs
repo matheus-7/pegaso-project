@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PegasoForms.Classes;
+using System;
 using System.Windows.Forms;
-using PegasoModels;
 
-namespace PegasoForms
+namespace PegasoForms.Forms
 {
     public partial class FormHome : Form
     {
@@ -17,15 +10,19 @@ namespace PegasoForms
         {
             InitializeComponent();
 
+            this.Text = Constants.SYSTEM_TITLE;
+            FormUtils.StartLayout(this, Constants.SYSTEM_ICON);
+
+            StartComponents();
             FixedMaximized();
         }
 
 
-        private void FormHome_ResizeEnd(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FixedMaximized();
+            //new FormAbout().ShowDialog();      
         }
-        
+
         private void FixedMaximized()
         {
             if (this.WindowState != FormWindowState.Maximized)
@@ -34,6 +31,17 @@ namespace PegasoForms
                 this.FormBorderStyle = FormBorderStyle.FixedSingle;
                 this.MaximizeBox = false;
             }
+        }
+        
+        private void FormHome_ResizeEnd(object sender, EventArgs e)
+        {
+            FixedMaximized();
+        }
+        
+        private void StartComponents()
+        {
+            //MENU
+            FormUtils.StartMenuItem(AboutToolStripMenuItem, Constants.ABOUT_IMAGE, Constants.ABOUT_MENU_TITLE);
         }
 
         protected override void WndProc(ref Message m)

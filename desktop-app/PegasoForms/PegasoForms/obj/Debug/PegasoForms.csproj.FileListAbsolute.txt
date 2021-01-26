@@ -12,4 +12,5 @@ C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\Pe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.csproj.CopyComplete
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.exe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.pdb
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.FormHome.resources
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormHome.resources
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormLogin.resources
