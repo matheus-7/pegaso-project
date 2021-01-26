@@ -15,11 +15,26 @@ namespace PegasoForms.Classes
             button.TextImageRelation = TextImageRelation.ImageBeforeText;
         }
 
+        public static void StartDialogLayout(Form form, Icon icon)
+        {
+            StartLayout(form, icon);
+
+            form.MinimizeBox = false;
+            form.StartPosition = FormStartPosition.CenterScreen;
+        }
+        
         public static void StartLabel(Label label, string text)
         {
             label.Text = text;
         }
 
+        public static void StartLayout(Form form, Icon icon)
+        {
+            form.Icon = icon;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;
+            form.MaximizeBox = false;
+        }
+        
         public static void StartMenuItem(ToolStripMenuItem menuItem, Image image, string title)
         {
             menuItem.Text = title;
@@ -32,20 +47,16 @@ namespace PegasoForms.Classes
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        public static void StartLayout(Form form, Icon icon)
+        public static void StartTextBox(TextBox textBox, int maxLength)
         {
-            form.Icon = icon;
-            form.FormBorderStyle = FormBorderStyle.FixedSingle;
-            form.MaximizeBox = false;
+            textBox.MaxLength = maxLength;
         }
 
-        public static void StartDialogLayout(Form form, Icon icon)
+        public static void StartTextBoxPassword(TextBox textBox, int maxLength)
         {
-            StartLayout(form, icon);
-
-            form.MinimizeBox = false;
-            form.StartPosition = FormStartPosition.CenterScreen;
+            StartTextBox(textBox, maxLength);
+            
+            textBox.UseSystemPasswordChar = true;
         }
-
     }
 }

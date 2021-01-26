@@ -14,3 +14,5 @@ C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\Pe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.pdb
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormHome.resources
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormLogin.resources
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\Database\Pegaso.mdf
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\Database\Pegaso_log.ldf

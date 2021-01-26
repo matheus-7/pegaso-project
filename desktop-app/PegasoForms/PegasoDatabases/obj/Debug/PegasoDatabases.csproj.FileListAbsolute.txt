@@ -4,3 +4,5 @@ C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\Pe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoDatabases\obj\Debug\PegasoDatabases.csproj.CoreCompileInputs.cache
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoDatabases\obj\Debug\PegasoDatabases.dll
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoDatabases\obj\Debug\PegasoDatabases.pdb
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoDatabases\bin\Debug\Database\Pegaso.mdf
+C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoDatabases\bin\Debug\Database\Pegaso_log.ldf

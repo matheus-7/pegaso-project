@@ -71,6 +71,11 @@ namespace PegasoForms.Forms
             FormUtils.StartLabel(LblPassword, Constants.PASSWORD_LABEL);
 
 
+            //TEXTBOXES
+            FormUtils.StartTextBox(TbUsername, 10);
+            FormUtils.StartTextBoxPassword(TbPassword, 10);
+
+
             //BUTTONS
             FormUtils.StartButton(BtnConfirm, Constants.CONFIRM_IMAGE, Constants.CONFIRM_BUTTON);
             FormUtils.StartButton(BtnCancel, Constants.CANCEL_IMAGE, Constants.CANCEL_BUTTON);

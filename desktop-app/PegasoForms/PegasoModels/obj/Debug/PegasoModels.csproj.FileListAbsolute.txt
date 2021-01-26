@@ -3,4 +3,3 @@ C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\Pe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.csproj.CoreCompileInputs.cache
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.dll
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.pdb
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Debug\PegasoModels.csprojAssemblyReference.cache

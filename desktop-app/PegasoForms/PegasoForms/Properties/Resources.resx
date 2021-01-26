@@ -118,22 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AboutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ICO\about-icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AboutImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\about-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CancelImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\cancel-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CategoriesImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\categories-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CompanyImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\company-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ConfirmImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\confirm-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EntitiesImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\entities-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaterialsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\materials-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovementsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\movements-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PegasoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ICO\pegaso-icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PegasoImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\pegaso-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\products-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\reports-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\settings-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitMeasurementsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\unit-measurements-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\user-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

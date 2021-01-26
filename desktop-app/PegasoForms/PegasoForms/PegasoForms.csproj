@@ -121,6 +121,16 @@
     <None Include="Assets\Images\login-image.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Images\materials-image.png" />
+    <None Include="Assets\Images\user-image.png" />
+    <None Include="Assets\Images\unit-measurements-image.png" />
+    <None Include="Assets\Images\products-image.png" />
+    <None Include="Assets\Images\entities-image.png" />
+    <None Include="Assets\Images\company-image.png" />
+    <None Include="Assets\Images\categories-image.png" />
+    <None Include="Assets\Images\settings-image.png" />
+    <None Include="Assets\Images\reports-image.png" />
+    <None Include="Assets\Images\movements-image.png" />
     <None Include="Assets\Images\confirm-image.png" />
     <None Include="Assets\Images\cancel-image.png" />
     <Content Include="pegaso-icon.ico" />

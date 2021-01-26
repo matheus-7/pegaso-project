@@ -40,7 +40,27 @@ namespace PegasoForms.Forms
         
         private void StartComponents()
         {
-            //MENU
+            //SETTINGS MENU
+            FormUtils.StartMenuItem(SettingsToolStripMenuItem, Constants.SETTINGS_IMAGE, Constants.SETTINGS_MENU_TITLE);
+                FormUtils.StartMenuItem(CompanyToolStripMenuItem, Constants.COMPANY_IMAGE, Constants.COMPANY_MENU_TITLE);
+                FormUtils.StartMenuItem(EntitiesToolStripMenuItem, Constants.ENTITIES_IMAGE, Constants.ENTITIES_MENU_TITLE);
+
+                //MATERIALS MENU
+                FormUtils.StartMenuItem(MaterialsToolStripMenuItem, Constants.MATERIALS_IMAGE, Constants.MATERIALS_MENU_TITLE);
+                    FormUtils.StartMenuItem(CategoriesToolStripMenuItem, Constants.CATEGORIES_IMAGE, Constants.CATEGORIES_MENU_TITLE);
+                    FormUtils.StartMenuItem(ProductsToolStripMenuItem, Constants.PRODUCTS_IMAGE, Constants.PRODUCTS_MENU_TITLE);
+                    FormUtils.StartMenuItem(UnitMeasurementsToolStripMenuItem, Constants.UNIT_MEASUREMENTS_IMAGE, Constants.UNIT_MEASUREMENTS_MENU_TITLE);
+            
+                FormUtils.StartMenuItem(UsersToolStripMenuItem, Constants.USERS_IMAGE, Constants.USERS_MENU_TITLE);
+
+
+            //MOVEMENTS MENU
+            FormUtils.StartMenuItem(MovementsToolStripMenuItem, Constants.MOVEMENTS_IMAGE, Constants.MOVEMENTS_MENU_TITLE);
+            
+            //REPORTS MENU
+            FormUtils.StartMenuItem(ReportsToolStripMenuItem, Constants.REPORTS_IMAGE, Constants.REPORTS_MENU_TITLE);
+            
+            //ABOUT MENU
             FormUtils.StartMenuItem(AboutToolStripMenuItem, Constants.ABOUT_IMAGE, Constants.ABOUT_MENU_TITLE);
         }
 
@@ -54,6 +74,5 @@ namespace PegasoForms.Forms
                 FixedMaximized();
             }
         }
-
     }
 }
