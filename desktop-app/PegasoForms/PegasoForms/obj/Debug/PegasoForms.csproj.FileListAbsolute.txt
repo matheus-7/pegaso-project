@@ -1,9 +1,7 @@
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoForms.exe.config
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoForms.exe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoForms.pdb
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoDatabases.dll
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoModels.dll
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoDatabases.pdb
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoModels.pdb
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.csprojAssemblyReference.cache
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Properties.Resources.resources
@@ -14,5 +12,4 @@ C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\Pe
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.pdb
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormHome.resources
 C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\obj\Debug\PegasoForms.Forms.FormLogin.resources
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\Database\Pegaso.mdf
-C:\Users\maath\Documents\Profissional\Developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\Database\Pegaso_log.ldf
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoForms\bin\Debug\PegasoModels.dll.config

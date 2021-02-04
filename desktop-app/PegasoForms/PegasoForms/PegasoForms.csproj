@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -96,10 +97,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PegasoDatabases\PegasoDatabases.csproj">
-      <Project>{376d27ef-cc72-4576-a96d-0417e092995c}</Project>
-      <Name>PegasoDatabases</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PegasoModels\PegasoModels.csproj">
       <Project>{4e12a8d0-de2c-4948-a877-30ee33082ff7}</Project>
       <Name>PegasoModels</Name>
@@ -136,4 +133,8 @@
     <Content Include="pegaso-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

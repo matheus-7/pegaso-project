@@ -1,0 +1,11 @@
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\Database\Pegaso_log.ldf
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\Database\Pegaso.mdf
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\PegasoModels.dll
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\PegasoModels.pdb
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\PegasoDatabases.dll
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\bin\Release\PegasoDatabases.pdb
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Release\PegasoModels.csprojAssemblyReference.cache
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Release\PegasoModels.csproj.CoreCompileInputs.cache
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Release\PegasoModels.csproj.CopyComplete
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Release\PegasoModels.dll
+C:\Users\maath\Documents\Profissional\developments\pegaso-project\desktop-app\PegasoForms\PegasoModels\obj\Release\PegasoModels.pdb

@@ -1,5 +1,8 @@
 ﻿using PegasoForms.Classes;
+using PegasoModels.Database;
+using PegasoModels.Models;
 using System;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace PegasoForms.Forms
@@ -16,6 +19,9 @@ namespace PegasoForms.Forms
             FormUtils.StartDialogLayout(this, Constants.SYSTEM_ICON);
             
             StartComponents();
+            StartDatabase();
+
+            PicSystemIcon.Visible = false;
         }
 
 
@@ -26,11 +32,27 @@ namespace PegasoForms.Forms
 
         private void BtnConfirm_Click(object sender, System.EventArgs e)
         {
-            if (IsValid())
+            try
             {
-                new FormHome().Show();
+                if (IsValid())
+                {
+                    User user = User.Select(TbUsername.Text, TbPassword.Text);
 
-                this.Hide();
+                    new User(
+                        0,
+                        TbUsername.Text,
+                        TbPassword.Text,
+                        "Matheus Socoloski Velho",
+                        "svelho.matheus@gmail.com").Save();
+
+                    //new FormHome().Show();
+
+                    //this.Hide();
+                }
+            }
+            catch(Exception ex)
+            {
+                Messages.ExceptionErrorMessage(ex, TbUsername);
             }
         }
 
@@ -72,13 +94,20 @@ namespace PegasoForms.Forms
 
 
             //TEXTBOXES
-            FormUtils.StartTextBox(TbUsername, 10);
-            FormUtils.StartTextBoxPassword(TbPassword, 10);
+            FormUtils.StartTextBox(TbUsername, 50);
+            FormUtils.StartTextBoxPassword(TbPassword, 20);
 
 
             //BUTTONS
             FormUtils.StartButton(BtnConfirm, Constants.CONFIRM_IMAGE, Constants.CONFIRM_BUTTON);
             FormUtils.StartButton(BtnCancel, Constants.CANCEL_IMAGE, Constants.CANCEL_BUTTON);
+        }
+
+        private void StartDatabase()
+        {
+            string dbName = ConfigurationManager.AppSettings["DATABASE_NAME"];
+
+            LocalDB.GetLocalDB(dbName, false);
         }
 
     }
