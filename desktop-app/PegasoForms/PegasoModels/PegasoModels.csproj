@@ -79,8 +79,11 @@
   <ItemGroup>
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="Database\DBUtils.cs" />
+    <Compile Include="Database\Versions\DBVersion.cs" />
     <Compile Include="Database\LocalDB.cs" />
+    <Compile Include="Database\Versions\DBVersion1-0-0-0.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\UnitMeasurement.cs" />
@@ -90,8 +93,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\Versions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

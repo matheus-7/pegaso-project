@@ -19,7 +19,7 @@ namespace PegasoForms.Classes
             ShowErrorMessage(message, controlToFocus);
         }
 
-        private static void ShowErrorMessage(string message, Control controlToFocus)
+        public static void ShowErrorMessage(string message, Control controlToFocus)
         {
             MessageBox.Show(message, Constants.SYSTEM_TITLE_SIMPLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
 

@@ -6,6 +6,8 @@ namespace PegasoForms.Forms
 {
     public partial class FormHome : Form
     {
+        public ImageList ImlTabs;
+
         public FormHome()
         {
             InitializeComponent();
@@ -21,6 +23,34 @@ namespace PegasoForms.Forms
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //new FormAbout().ShowDialog();      
+        }
+
+        private void CompanyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateTab(new FormCompany(), 1);
+        }
+
+        private void CreateTab(UserControl form, int imageIndex)
+        {
+            string tabTitle = form.Text;
+
+            foreach (TabPage tab in tbcModules.TabPages)
+            {
+                if (tab.Name.Equals(tabTitle))
+                {
+                    tbcModules.SelectedTab = tab;
+                    return;
+                }
+            }
+
+            TabPage tabPage = new TabPage();
+            tabPage.Name = tabTitle;
+            tabPage.Text = tabTitle;
+            tabPage.ImageIndex = imageIndex;
+            tabPage.Controls.Add(form);
+
+            tbcModules.TabPages.Add(tabPage);
+            tbcModules.SelectedTab = tabPage;
         }
 
         private void FixedMaximized()
@@ -62,8 +92,42 @@ namespace PegasoForms.Forms
             
             //ABOUT MENU
             FormUtils.StartMenuItem(AboutToolStripMenuItem, Constants.ABOUT_IMAGE, Constants.ABOUT_MENU_TITLE);
+
+            //IMAGE LIST
+            StartImageList();
+            
+            //TAB CONTROL
+            StartTabControl();
         }
 
+        private void StartImageList()
+        {
+            ImlTabs = new ImageList();
+
+            ImlTabs.Images.Add(Constants.SETTINGS_IMAGE);          //0
+            ImlTabs.Images.Add(Constants.COMPANY_IMAGE);           //1
+            ImlTabs.Images.Add(Constants.ENTITIES_IMAGE);          //2
+            ImlTabs.Images.Add(Constants.MATERIALS_IMAGE);         //3
+            ImlTabs.Images.Add(Constants.CATEGORIES_IMAGE);        //4
+            ImlTabs.Images.Add(Constants.PRODUCTS_IMAGE);          //5
+            ImlTabs.Images.Add(Constants.UNIT_MEASUREMENTS_IMAGE); //6
+            ImlTabs.Images.Add(Constants.USERS_IMAGE);             //7
+            ImlTabs.Images.Add(Constants.MOVEMENTS_IMAGE);         //8
+            ImlTabs.Images.Add(Constants.REPORTS_IMAGE);           //9
+            ImlTabs.Images.Add(Constants.ABOUT_IMAGE);             //10
+        }
+
+        private void StartTabControl()
+        {
+            tbcModules.ImageList = ImlTabs;
+            tbcModules.Dock = DockStyle.Fill;
+        }
+
+        private void UsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateTab(new FormUser(), 7);
+        }
+        
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
@@ -74,5 +138,6 @@ namespace PegasoForms.Forms
                 FixedMaximized();
             }
         }
+
     }
 }

@@ -54,6 +54,10 @@ namespace PegasoForms.Classes
         public const string UNIT_MEASUREMENTS_MENU_TITLE = "Unidades de Medida";
         public const string USERS_MENU_TITLE = "Usuários";
 
+
+        //MESSAGES
+        public const string INVALID_LOGIN_MESSAGE = "Login ou senha inválidos!";
+
     }
 
 }

@@ -1,8 +1,7 @@
 ﻿using PegasoForms.Classes;
-using PegasoModels.Database;
+using PegasoModels.Database.Versions;
 using PegasoModels.Models;
 using System;
-using System.Configuration;
 using System.Windows.Forms;
 
 namespace PegasoForms.Forms
@@ -38,16 +37,15 @@ namespace PegasoForms.Forms
                 {
                     User user = User.Select(TbUsername.Text, TbPassword.Text);
 
-                    new User(
-                        0,
-                        TbUsername.Text,
-                        TbPassword.Text,
-                        "Matheus Socoloski Velho",
-                        "svelho.matheus@gmail.com").Save();
+                    //if (user == null)
+                    //{
+                    //    Messages.ShowErrorMessage(Constants.INVALID_LOGIN_MESSAGE, TbUsername);
+                    //    return;
+                    //}
 
-                    //new FormHome().Show();
+                    new FormHome().Show();
 
-                    //this.Hide();
+                    this.Hide();
                 }
             }
             catch(Exception ex)
@@ -105,9 +103,14 @@ namespace PegasoForms.Forms
 
         private void StartDatabase()
         {
-            string dbName = ConfigurationManager.AppSettings["DATABASE_NAME"];
-
-            LocalDB.GetLocalDB(dbName, false);
+            try
+            {
+                new DBVersion().UpdateVersion();
+            }
+            catch (Exception ex)
+            {
+                Messages.ExceptionErrorMessage(ex, null);
+            }
         }
 
     }

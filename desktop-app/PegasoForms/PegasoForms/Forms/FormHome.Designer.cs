@@ -31,16 +31,17 @@ namespace PegasoForms.Forms
         {
             this.MainStripMenu = new System.Windows.Forms.MenuStrip();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MovementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MaterialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EntitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EntitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MaterialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UnitMeasurementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MovementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbcModules = new System.Windows.Forms.TabControl();
             this.MainStripMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,54 @@ namespace PegasoForms.Forms
             this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.SettingsToolStripMenuItem.Text = "Settings";
             // 
+            // CompanyToolStripMenuItem
+            // 
+            this.CompanyToolStripMenuItem.Name = "CompanyToolStripMenuItem";
+            this.CompanyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CompanyToolStripMenuItem.Text = "Company";
+            this.CompanyToolStripMenuItem.Click += new System.EventHandler(this.CompanyToolStripMenuItem_Click);
+            // 
+            // EntitiesToolStripMenuItem
+            // 
+            this.EntitiesToolStripMenuItem.Name = "EntitiesToolStripMenuItem";
+            this.EntitiesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.EntitiesToolStripMenuItem.Text = "Entities";
+            // 
+            // MaterialsToolStripMenuItem
+            // 
+            this.MaterialsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CategoriesToolStripMenuItem,
+            this.ProductsToolStripMenuItem,
+            this.UnitMeasurementsToolStripMenuItem});
+            this.MaterialsToolStripMenuItem.Name = "MaterialsToolStripMenuItem";
+            this.MaterialsToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.MaterialsToolStripMenuItem.Text = "Materials";
+            // 
+            // CategoriesToolStripMenuItem
+            // 
+            this.CategoriesToolStripMenuItem.Name = "CategoriesToolStripMenuItem";
+            this.CategoriesToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.CategoriesToolStripMenuItem.Text = "Categories";
+            // 
+            // ProductsToolStripMenuItem
+            // 
+            this.ProductsToolStripMenuItem.Name = "ProductsToolStripMenuItem";
+            this.ProductsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.ProductsToolStripMenuItem.Text = "Products";
+            // 
+            // UnitMeasurementsToolStripMenuItem
+            // 
+            this.UnitMeasurementsToolStripMenuItem.Name = "UnitMeasurementsToolStripMenuItem";
+            this.UnitMeasurementsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.UnitMeasurementsToolStripMenuItem.Text = "Unit Measurements";
+            // 
+            // UsersToolStripMenuItem
+            // 
+            this.UsersToolStripMenuItem.Name = "UsersToolStripMenuItem";
+            this.UsersToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.UsersToolStripMenuItem.Text = "Users";
+            this.UsersToolStripMenuItem.Click += new System.EventHandler(this.UsersToolStripMenuItem_Click);
+            // 
             // MovementsToolStripMenuItem
             // 
             this.MovementsToolStripMenuItem.Name = "MovementsToolStripMenuItem";
@@ -87,57 +136,20 @@ namespace PegasoForms.Forms
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
-            // MaterialsToolStripMenuItem
+            // tbcModules
             // 
-            this.MaterialsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CategoriesToolStripMenuItem,
-            this.ProductsToolStripMenuItem,
-            this.UnitMeasurementsToolStripMenuItem});
-            this.MaterialsToolStripMenuItem.Name = "MaterialsToolStripMenuItem";
-            this.MaterialsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.MaterialsToolStripMenuItem.Text = "Materials";
-            // 
-            // EntitiesToolStripMenuItem
-            // 
-            this.EntitiesToolStripMenuItem.Name = "EntitiesToolStripMenuItem";
-            this.EntitiesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.EntitiesToolStripMenuItem.Text = "Entities";
-            // 
-            // CompanyToolStripMenuItem
-            // 
-            this.CompanyToolStripMenuItem.Name = "CompanyToolStripMenuItem";
-            this.CompanyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CompanyToolStripMenuItem.Text = "Company";
-            // 
-            // UsersToolStripMenuItem
-            // 
-            this.UsersToolStripMenuItem.Name = "UsersToolStripMenuItem";
-            this.UsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.UsersToolStripMenuItem.Text = "Users";
-            // 
-            // CategoriesToolStripMenuItem
-            // 
-            this.CategoriesToolStripMenuItem.Name = "CategoriesToolStripMenuItem";
-            this.CategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CategoriesToolStripMenuItem.Text = "Categories";
-            // 
-            // ProductsToolStripMenuItem
-            // 
-            this.ProductsToolStripMenuItem.Name = "ProductsToolStripMenuItem";
-            this.ProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ProductsToolStripMenuItem.Text = "Products";
-            // 
-            // UnitMeasurementsToolStripMenuItem
-            // 
-            this.UnitMeasurementsToolStripMenuItem.Name = "UnitMeasurementsToolStripMenuItem";
-            this.UnitMeasurementsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.UnitMeasurementsToolStripMenuItem.Text = "Unit Measurements";
+            this.tbcModules.Location = new System.Drawing.Point(0, 27);
+            this.tbcModules.Name = "tbcModules";
+            this.tbcModules.SelectedIndex = 0;
+            this.tbcModules.Size = new System.Drawing.Size(682, 352);
+            this.tbcModules.TabIndex = 1;
             // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 385);
+            this.Controls.Add(this.tbcModules);
             this.Controls.Add(this.MainStripMenu);
             this.MainMenuStrip = this.MainStripMenu;
             this.Name = "FormHome";
@@ -164,6 +176,7 @@ namespace PegasoForms.Forms
         private System.Windows.Forms.ToolStripMenuItem CategoriesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem UnitMeasurementsToolStripMenuItem;
+        private System.Windows.Forms.TabControl tbcModules;
     }
 }
 
