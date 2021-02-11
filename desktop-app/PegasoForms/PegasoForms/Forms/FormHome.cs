@@ -1,4 +1,6 @@
 ﻿using PegasoForms.Classes;
+using PegasoModels;
+using PegasoModels.Models;
 using System;
 using System.Windows.Forms;
 
@@ -8,7 +10,7 @@ namespace PegasoForms.Forms
     {
         public ImageList ImlTabs;
 
-        public FormHome()
+        public FormHome(User user)
         {
             InitializeComponent();
 
@@ -17,6 +19,8 @@ namespace PegasoForms.Forms
 
             StartComponents();
             FixedMaximized();
+
+            Global.User = user;
         }
 
 

@@ -14,15 +14,17 @@ namespace PegasoModels.Models
         public string Password { get; private set; }
         public string Name { get; private set; }
         public string Email { get; private set; }
+        public bool Ativo { get; private set; }
 
-
-        public User(int id, string username, string password, string name, string email)
+         
+        public User(int id, string username, string password, string name, string email, bool ativo)
         {
             Id = id;
             Username = username;
             Password = password;
             Name = name;
             Email = email;
+            Ativo = ativo;
         }
 
 

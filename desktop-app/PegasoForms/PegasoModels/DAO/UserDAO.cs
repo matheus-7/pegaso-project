@@ -31,7 +31,8 @@ namespace PegasoModels.DAO
                 DR["Username"].ToString(),
                 DR["Password"].ToString(),
                 DR["Name"].ToString(),
-                DR["Email"].ToString()
+                DR["Email"].ToString(),
+                Convert.ToBoolean(DR["Ativo"])
             );
         }
 
@@ -39,14 +40,15 @@ namespace PegasoModels.DAO
         {
             try
             {
-                SqlCommand command = new SqlCommand(@"INSERT INTO [User] (Username,  Password,  Name,  Email )
-                                                                  VALUES (@Username, @Password, @Name, @Email)");
+                SqlCommand command = new SqlCommand(@"INSERT INTO [User] (Username,  Password,  Name,  Email,  Ativo )
+                                                                  VALUES (@Username, @Password, @Name, @Email, @Ativo)");
 
                 command.Parameters.AddWithValue("@Username", user.Username);
                 command.Parameters.AddWithValue("@Password", user.Password);
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Email", user.Email);
-
+                command.Parameters.AddWithValue("@Ativo", user.Ativo);
+                
                 database.SQLCommand(command);
                 database.Close();
             }
@@ -66,7 +68,8 @@ namespace PegasoModels.DAO
                                                              Username, 
                                                              Password, 
                                                              Name, 
-                                                             Email
+                                                             Email,
+                                                             Ativo
                                                       FROM [User]
                                                       WHERE Username = @Username
                                                          AND Password = @Password");

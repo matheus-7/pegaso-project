@@ -37,13 +37,18 @@ namespace PegasoForms.Forms
                 {
                     User user = User.Select(TbUsername.Text, TbPassword.Text);
 
-                    //if (user == null)
-                    //{
-                    //    Messages.ShowErrorMessage(Constants.INVALID_LOGIN_MESSAGE, TbUsername);
-                    //    return;
-                    //}
+                    if (user == null)
+                    {
+                        Messages.ShowErrorMessage(Constants.INVALID_LOGIN_MESSAGE, TbUsername);
+                        return;
+                    }
+                    else if (!user.Ativo)
+                    {
+                        Messages.ShowErrorMessage(Constants.INACTIVE_USER_MESSAGE, TbUsername);
+                        return;
+                    }
 
-                    new FormHome().Show();
+                    new FormHome(user).Show();
 
                     this.Hide();
                 }

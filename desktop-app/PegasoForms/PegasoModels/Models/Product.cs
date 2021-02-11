@@ -14,11 +14,9 @@ namespace PegasoModels.Models
         public Category Category { get; private set; }
         public UnitMeasurement UnitMeasurement { get; private set; }
         public double Price { get; private set; }
-        public DateTime DateRegister { get; private set; }
-        public User User { get; private set; }
 
 
-        public Product(int id, string name, string color, Category category, UnitMeasurement unitMeasurement, double price, DateTime dateRegister, User user)
+        public Product(int id, string name, string color, Category category, UnitMeasurement unitMeasurement, double price)
         {
             Id = id;
             Name = name;
@@ -26,8 +24,6 @@ namespace PegasoModels.Models
             Category = category;
             UnitMeasurement = unitMeasurement;
             Price = price;
-            DateRegister = dateRegister;
-            User = user;
         }
 
     }

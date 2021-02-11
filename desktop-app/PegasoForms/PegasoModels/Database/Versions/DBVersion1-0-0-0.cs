@@ -1,9 +1,35 @@
-﻿using System.Data.SqlClient;
+﻿using PegasoModels.DAO;
+using PegasoModels.Models;
+using System.Data.SqlClient;
 
 namespace PegasoModels.Database.Versions
 {
     public static class DBVersion1_0_0_0
     {
+        private static void CreateAdminUser()
+        {
+            User user = new User(
+                0,
+                "admin",
+                "admin",
+                "Administrador",
+                null,
+                true
+            );
+
+            new UserDAO().Insert(user);
+        }
+
+        private static void CreateCompanyTable(DBUtils database)
+        {
+            SqlCommand command = new SqlCommand(@"CREATE TABLE [Company] (
+	                                                 [Id][int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	                                                 [Name][varchar](100) NOT NULL
+                                                  )");
+
+            database.SQLCommand(command);
+        }
+
         private static void CreateUserTable(DBUtils database)
         {
             SqlCommand command = new SqlCommand(@"CREATE TABLE [User] (
@@ -11,15 +37,19 @@ namespace PegasoModels.Database.Versions
 	                                                 [Username][varchar](50) NOT NULL,
 	                                                 [Password][varchar](512) NOT NULL,
 	                                                 [Name][varchar](80) NOT NULL,
-	                                                 [Email][varchar](100) NULL
+	                                                 [Email][varchar](100) NULL,
+                                                     [Ativo][bit] NOT NULL
                                                   )");
 
             database.SQLCommand(command);
         }
-        
+
         public static void UpdateDatabase(DBUtils database)
         {
             CreateUserTable(database);
+            CreateCompanyTable(database);
+
+            CreateAdminUser();
 
             SaveVersion(database);
         }

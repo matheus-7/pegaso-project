@@ -56,6 +56,7 @@ namespace PegasoForms.Classes
 
 
         //MESSAGES
+        public const string INACTIVE_USER_MESSAGE = "Usuário inativo!";
         public const string INVALID_LOGIN_MESSAGE = "Login ou senha inválidos!";
 
     }

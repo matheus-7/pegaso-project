@@ -82,6 +82,7 @@
     <Compile Include="Database\Versions\DBVersion.cs" />
     <Compile Include="Database\LocalDB.cs" />
     <Compile Include="Database\Versions\DBVersion1-0-0-0.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Product.cs" />
