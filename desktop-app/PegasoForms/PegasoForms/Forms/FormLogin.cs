@@ -42,7 +42,7 @@ namespace PegasoForms.Forms
                         Messages.ShowErrorMessage(Constants.INVALID_LOGIN_MESSAGE, TbUsername);
                         return;
                     }
-                    else if (!user.Ativo)
+                    else if (!user.Active)
                     {
                         Messages.ShowErrorMessage(Constants.INACTIVE_USER_MESSAGE, TbUsername);
                         return;

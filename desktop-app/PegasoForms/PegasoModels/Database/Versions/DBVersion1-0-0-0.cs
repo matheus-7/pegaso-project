@@ -28,6 +28,17 @@ namespace PegasoModels.Database.Versions
                                                   )");
 
             database.SQLCommand(command);
+
+            command.CommandText = @"CREATE TABLE [Log_Company] (
+	                                   [Id][int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+                                       [CompanyId][int] NOT NULL FOREIGN KEY REFERENCES [Company](Id),
+	                                   [Name][varchar](100) NOT NULL,
+                                       [LogType][varchar](20) NOT NULL,
+                                       [LogUserId][int] NOT NULL FOREIGN KEY REFERENCES [User](Id),
+                                       [LogDate][datetime] NOT NULL
+                                    )";
+
+            database.SQLCommand(command);
         }
 
         private static void CreateUserTable(DBUtils database)
@@ -38,8 +49,23 @@ namespace PegasoModels.Database.Versions
 	                                                 [Password][varchar](512) NOT NULL,
 	                                                 [Name][varchar](80) NOT NULL,
 	                                                 [Email][varchar](100) NULL,
-                                                     [Ativo][bit] NOT NULL
+                                                     [Active][bit] NOT NULL
                                                   )");
+
+            database.SQLCommand(command);
+
+            command.CommandText = @"CREATE TABLE [Log_User] (
+	                                   [Id][int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	                                   [UserId][int] NOT NULL FOREIGN KEY REFERENCES [User](Id),
+                                       [Username][varchar](50) NOT NULL,
+	                                   [Password][varchar](512) NOT NULL,
+	                                   [Name][varchar](80) NOT NULL,
+	                                   [Email][varchar](100) NULL,
+                                       [Active][bit] NOT NULL,
+                                       [LogType][varchar](20) NOT NULL,
+                                       [LogUserId][int] NOT NULL FOREIGN KEY REFERENCES [User](Id),
+                                       [LogDate][datetime] NOT NULL
+                                    )";
 
             database.SQLCommand(command);
         }
